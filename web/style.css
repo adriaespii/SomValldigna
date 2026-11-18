@@ -2,275 +2,164 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Manrope', Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
 }
-
 body {
-  background-color: #f2f5f3;
+  background: #f2f5f3;
   color: #2b2d42;
   line-height: 1.6;
 }
-
 a {
   text-decoration: none;
   color: inherit;
 }
 
 header {
-  background-color: #fff;
-  border-bottom: 3px solid #2D5D46;
+  background: #fff;
+  border-bottom: 3px solid #2d5d46;
 }
-
-.top-strip {
-  background-color: #1e3a2c;
+.barra,
+footer {
+  background: #1e3a2c;
+}
+.barra {
   color: #e2e8f0;
   font-size: 12px;
   padding: 6px 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
-.top-strip span {
-  font-weight: 500;
-}
-
-.capcalera-central {
+.logo {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding: 22px 20px 18px;
-  text-align: center;
-}
-
-.logo-marca {
-  display: flex;
   align-items: center;
   gap: 18px;
+  padding: 20px;
 }
-
-.logo-marca img {
+.logo img {
   height: 90px;
-  width: auto;
-  object-fit: contain;
 }
-
-.text-marca h1 {
+.logo h1,
+.candidat h3 {
+  color: #2d5d46;
+}
+.logo h1 {
   font-size: 30px;
-  color: #2D5D46;
-  font-weight: 700;
-  letter-spacing: 0.5px;
   line-height: 1.1;
 }
-
-.text-marca .subtitol {
+.subtitol,
+.carrec {
+  color: #d95a11;
+  font-weight: 700;
+}
+.subtitol {
   font-size: 14px;
-  color: #D95A11;
-  font-weight: 600;
-  letter-spacing: 0.5px;
   margin-top: 4px;
 }
-
-.text-marca .lema {
+.lema {
   font-size: 13px;
   color: #555;
   font-style: italic;
-  margin-top: 2px;
 }
 
-nav {
-  background-color: #2D5D46;
+nav,
+.verd {
+  background: #2d5d46;
 }
-
 nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
-  flex-wrap: wrap;
 }
-
-nav ul li a {
+nav a {
   display: block;
   color: #fff;
   padding: 11px 22px;
   font-weight: 600;
   font-size: 14px;
-  transition: background-color 0.2s ease;
 }
-
-nav ul li a:hover,
-nav ul li a.actiu {
-  background-color: #D95A11;
+nav a:hover,
+nav .actiu,
+h2 {
+  background: #d95a11;
+  color: #fff;
 }
 
 main {
   max-width: 960px;
   margin: 25px auto;
-  background-color: #fff;
+  background: #fff;
   padding: 30px;
   border-radius: 4px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
-
-.titol-seccio {
-  background-color: #D95A11;
-  color: #fff;
+main p {
+  font-size: 14.5px;
+  color: #333;
+  margin-bottom: 12px;
+  text-align: justify;
+}
+h2 {
   padding: 9px 24px;
   font-size: 18px;
-  font-weight: 700;
-  text-align: center;
   width: fit-content;
   margin: 30px auto 20px;
   border-radius: 3px;
-  letter-spacing: 0.5px;
 }
 
-.titol-verd {
-  background-color: #2D5D46;
-}
-
-.desc {
-  font-size: 14.5px;
-  line-height: 1.7;
-  color: #333;
-  margin-bottom: 18px;
-  text-align: justify;
-}
-
-.desc p {
-  margin-bottom: 12px;
-}
-
-.bloc-candidat {
+.candidat {
   display: flex;
   gap: 25px;
   align-items: center;
-  background-color: #f9fbf9;
+  background: #f9fbf9;
   border: 1px solid #dbe7df;
-  border-left: 5px solid #2D5D46;
+  border-left: 5px solid #2d5d46;
   padding: 20px;
   border-radius: 4px;
   margin: 20px 0;
 }
-
-.bloc-candidat img {
+.candidat img {
   width: 170px;
   height: 210px;
   object-fit: cover;
   border-radius: 4px;
-  border: 2px solid #2D5D46;
+  border: 2px solid #2d5d46;
 }
-
-.candidat-info h3 {
+.candidat h3 {
   font-size: 20px;
-  color: #2D5D46;
   margin-bottom: 4px;
 }
-
-.candidat-info .carrec {
+.carrec {
   font-size: 13px;
-  color: #D95A11;
-  font-weight: 700;
-  margin-bottom: 10px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
-
-.candidat-info p {
+.candidat p {
   font-size: 14px;
-  line-height: 1.6;
   color: #444;
   margin-bottom: 8px;
 }
 
-.galeria-propostes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 18px;
-  margin: 20px 0;
-}
-
-.tarja-proposta {
-  flex: 1 1 calc(50% - 18px);
-  background-color: #fafbfa;
-  border: 1px solid #e1e7e3;
-  border-top: 4px solid #2D5D46;
-  padding: 16px 18px;
-  border-radius: 3px;
-}
-
-.tarja-proposta:nth-child(even) {
-  border-top-color: #D95A11;
-}
-
-.tarja-proposta h4 {
-  font-size: 15.5px;
-  color: #2D5D46;
-  margin-bottom: 8px;
-  font-weight: 700;
-}
-
-.tarja-proposta p {
-  font-size: 13.5px;
-  color: #4b5563;
-  line-height: 1.55;
-}
-
-.taula-agenda {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 15px 0 25px;
-  font-size: 13.5px;
-}
-
-.taula-agenda th {
-  background-color: #2D5D46;
-  color: #fff;
-  padding: 10px 12px;
-  text-align: left;
-  font-weight: 600;
-}
-
-.taula-agenda td {
-  padding: 9px 12px;
-  border-bottom: 1px solid #e2e8f0;
-  color: #334155;
-}
-
-.taula-agenda tr:nth-child(even) {
-  background-color: #f8faf9;
-}
-
-.taula-agenda .poble {
-  font-weight: 700;
-  color: #D95A11;
-}
-
 footer {
-  background-color: #1e3a2c;
   color: #cbd5e1;
   padding: 24px 20px;
   margin-top: 40px;
-  border-top: 4px solid #D95A11;
+  border-top: 4px solid #d95a11;
   font-size: 13px;
   text-align: center;
 }
-
-.footer-contingut p {
+footer p {
   margin-bottom: 6px;
 }
-
-.footer-links {
+.links {
   margin-top: 10px;
   font-size: 12px;
 }
-
-.footer-links a {
-  color: #cbd5e1;
+.links a {
   margin: 0 8px;
   text-decoration: underline;
 }
-
-.footer-links a:hover {
+.links a:hover {
   color: #fff;
 }
