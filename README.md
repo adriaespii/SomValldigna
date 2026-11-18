@@ -59,20 +59,13 @@ El mapa s'ha dissenyat directament a **Figma / FigJam** (tauler accessible a [fi
 
 ---
 
-## Wireframes i Prototip Interactiu
+## Wireframes a Figma
 
 ### Wireframes de baixa fidelitat a Figma:
 S'han dissenyat els esquemes bàsics a Figma seguint un enfocament **Mobile-First (390px)** i la seua adaptació a **escriptori Desktop (1200px)**, utilitzant caixes per a estructurar la disposició dels elements abans de començar a programar:
 
 <p align="center">
   <img src="assets/page4_img1.png" alt="Wireframes Mobile i Desktop a Figma" width="650">
-</p>
-
-### Prototip funcional bàsic al navegador:
-S'ha implementat una mini-web funcional senzilla en **HTML5/CSS** (`docs/mini_web_som_valldigna.html`) per a validar el flux de navegació, l'adaptació responsive i el funcionament del formulari directament al navegador:
-
-<p align="center">
-  <img src="assets/page4_img2.png" alt="Prototip funcional al navegador" width="650">
 </p>
 
 ---
@@ -82,7 +75,7 @@ S'ha implementat una mini-web funcional senzilla en **HTML5/CSS** (`docs/mini_we
 ### Tauler de Tasques i Repartiment de Rols:
 El repartiment de responsabilitats entre els dos alumnes és el següent:
 - **Pol Plana Boivin:** Arquitectura de la informació a FigJam, redacció de requisits, casella de protecció de dades (RGPD Art. 9) i administració del tauler a Trello.
-- **Adrià Espí Ripoll:** Identitat visual de marca, disseny dels wireframes a Figma, maquetació del prototip HTML5/CSS i integració del logotip oficial.
+- **Adrià Espí Ripoll:** Identitat visual de marca, disseny dels wireframes a Figma i integració del logotip oficial.
 
 La gestió i seguiment de les tasques s'ha realitzat mitjançant el tauler Kanban en **Trello** ([trello.com/b/QovdwhOI](https://trello.com/b/QovdwhOI)) organitzat en les llistes *Backlog*, *In Progress*, *Review* i *Done*:
 
