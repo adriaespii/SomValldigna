@@ -112,7 +112,6 @@ h2 {
   border-radius: 3px;
 }
 
-/* Candidat */
 .candidat {
   display: flex;
   gap: 25px;
@@ -146,7 +145,6 @@ h2 {
   margin-bottom: 8px;
 }
 
-/* Equip i llista */
 .llista-equip {
   display: flex;
   flex-direction: column;
@@ -178,7 +176,6 @@ h2 {
   margin-bottom: 0;
 }
 
-/* Botons de Filtre Comarcal estàtics (sense animacions) */
 .filtre-comarcal {
   display: flex;
   justify-content: center;
@@ -213,7 +210,6 @@ button.filtre-btn.actiu {
   border-color: #2d5d46;
 }
 
-/* Targetes propostes */
 .galeria-propostes {
   display: flex;
   flex-wrap: wrap;
@@ -254,7 +250,6 @@ button.filtre-btn.actiu {
   margin-bottom: 6px;
 }
 
-/* Taula Agenda */
 .taula-agenda {
   width: 100%;
   border-collapse: collapse;
@@ -281,7 +276,6 @@ button.filtre-btn.actiu {
   color: #d95a11;
 }
 
-/* Formulari Participa */
 .formulari-participa {
   max-width: 650px;
   margin: 25px auto 10px;
@@ -378,7 +372,6 @@ button.filtre-btn.actiu {
   text-align: center;
 }
 
-/* Footer */
 footer {
   color: #cbd5e1;
   padding: 24px 20px;
@@ -403,7 +396,6 @@ footer p {
   color: #fff;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .logo {
     flex-direction: column;
