@@ -26,21 +26,24 @@ footer {
   color: #e2e8f0;
   font-size: 12px;
   padding: 6px 20px;
-  display: flex;
-  justify-content: space-between;
+}
+.barra span:last-child {
+  float: right;
 }
 
 .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 18px;
+  text-align: center;
   padding: 20px;
 }
 .logo img {
   height: 90px;
-  width: auto;
-  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.logo div {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
 }
 .logo h1,
 .candidat h3 {
@@ -57,7 +60,6 @@ footer {
 }
 .subtitol {
   font-size: 14px;
-  margin-top: 4px;
 }
 .lema {
   font-size: 13px;
@@ -70,10 +72,11 @@ nav,
   background: #2d5d46;
 }
 nav ul {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   list-style: none;
-  flex-wrap: wrap;
+}
+nav li {
+  display: inline-block;
 }
 nav a {
   display: block;
@@ -81,7 +84,6 @@ nav a {
   padding: 11px 22px;
   font-weight: 600;
   font-size: 14px;
-  transition: background-color 0.2s ease;
 }
 nav a:hover,
 nav .actiu,
@@ -96,7 +98,6 @@ main {
   background: #fff;
   padding: 30px;
   border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 main p {
   font-size: 14.5px;
@@ -113,9 +114,6 @@ h2 {
 }
 
 .candidat {
-  display: flex;
-  gap: 25px;
-  align-items: center;
   background: #f9fbf9;
   border: 1px solid #dbe7df;
   border-left: 5px solid #2d5d46;
@@ -123,10 +121,16 @@ h2 {
   border-radius: 4px;
   margin: 20px 0;
 }
+.candidat::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .candidat img {
   width: 170px;
   height: 210px;
-  object-fit: cover;
+  float: left;
+  margin-right: 25px;
   border-radius: 4px;
   border: 2px solid #2d5d46;
 }
@@ -146,9 +150,6 @@ h2 {
 }
 
 .llista-equip {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
   margin: 20px 0;
 }
 .membre-equip {
@@ -157,6 +158,7 @@ h2 {
   border-left: 4px solid #2d5d46;
   padding: 16px 20px;
   border-radius: 3px;
+  margin-bottom: 15px;
 }
 .membre-equip h4 {
   color: #2d5d46;
@@ -173,22 +175,14 @@ h2 {
 .membre-equip p {
   font-size: 13.5px;
   color: #444;
-  margin-bottom: 0;
 }
 
 .filtre-comarcal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  text-align: center;
   margin: 20px 0;
-  flex-wrap: wrap;
 }
-.filtre-btn,
-button.filtre-btn {
-  appearance: none;
-  -webkit-appearance: none;
-  background-color: #ffffff;
+.filtre-btn {
+  background: #fff;
   color: #2d5d46;
   border: 2px solid #2d5d46;
   padding: 8px 16px;
@@ -196,35 +190,39 @@ button.filtre-btn {
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  outline: none;
+  margin: 4px;
 }
 .filtre-btn:hover {
-  background-color: #d95a11;
-  color: #ffffff;
+  background: #d95a11;
+  color: #fff;
   border-color: #d95a11;
 }
-.filtre-btn.actiu,
-button.filtre-btn.actiu {
-  background-color: #2d5d46;
-  color: #ffffff;
-  border-color: #2d5d46;
+.filtre-btn.actiu {
+  background: #2d5d46;
+  color: #fff;
 }
 
 .galeria-propostes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 18px;
   margin: 20px 0;
 }
+.galeria-propostes::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .tarja-proposta {
-  flex: 1 1 calc(50% - 18px);
+  width: 48%;
+  float: left;
+  margin-right: 4%;
+  margin-bottom: 18px;
   background: #fafbfa;
   border: 1px solid #e1e7e3;
   border-top: 4px solid #2d5d46;
   padding: 18px 20px;
   border-radius: 3px;
 }
-.tarja-proposta:nth-child(even) {
+.tarja-proposta:nth-child(2n) {
+  margin-right: 0;
   border-top-color: #d95a11;
 }
 .tarja-proposta h3,
@@ -232,17 +230,14 @@ button.filtre-btn.actiu {
   font-size: 16px;
   color: #2d5d46;
   margin-bottom: 8px;
-  font-weight: 700;
 }
 .tarja-proposta p {
   font-size: 13.5px;
   color: #4b5563;
-  line-height: 1.55;
   margin-bottom: 8px;
 }
 .tarja-proposta ul {
   padding-left: 20px;
-  margin-top: 8px;
   font-size: 13.5px;
   color: #4b5563;
 }
@@ -261,7 +256,6 @@ button.filtre-btn.actiu {
   color: #fff;
   padding: 10px 14px;
   text-align: left;
-  font-weight: 600;
 }
 .taula-agenda td {
   padding: 10px 14px;
@@ -295,9 +289,7 @@ button.filtre-btn.actiu {
   color: #2d5d46;
   margin-bottom: 6px;
 }
-.camp-formulari input[type="text"],
-.camp-formulari input[type="email"],
-.camp-formulari input[type="tel"],
+.camp-formulari input,
 .camp-formulari select,
 .camp-formulari textarea {
   width: 100%;
@@ -306,15 +298,7 @@ button.filtre-btn.actiu {
   border: 1px solid #cbd5e1;
   border-radius: 3px;
   font-family: inherit;
-  background: #fff;
   color: #2b2d42;
-}
-.camp-formulari input:focus,
-.camp-formulari select:focus,
-.camp-formulari textarea:focus {
-  outline: none;
-  border-color: #2d5d46;
-  box-shadow: 0 0 0 2px rgba(45, 93, 70, 0.2);
 }
 .clausula-rgpd {
   background: #f1f6f3;
@@ -327,34 +311,28 @@ button.filtre-btn.actiu {
   font-size: 11.5px;
   color: #555;
   margin-bottom: 8px;
-  text-align: left;
-  line-height: 1.45;
 }
-.casella-rgpd {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-}
-.casella-rgpd input[type="checkbox"] {
+.casella-rgpd input {
+  vertical-align: top;
   margin-top: 3px;
-  accent-color: #2d5d46;
+  margin-right: 8px;
 }
 .casella-rgpd label {
+  display: inline-block;
+  width: 90%;
   font-size: 12.5px;
   color: #2b2d42;
   font-weight: 600;
-  line-height: 1.4;
 }
 .boto-enviar {
   background: #d95a11;
   color: #fff;
   border: none;
-  padding: 12px 28px;
+  padding: 12px;
   font-size: 15px;
   font-weight: 700;
   border-radius: 3px;
   cursor: pointer;
-  transition: background-color 0.2s ease;
   width: 100%;
 }
 .boto-enviar:hover {
@@ -397,34 +375,35 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  .logo {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
+  .logo img {
+    display: block;
+    margin: 0 auto 10px;
   }
-  .candidat {
-    flex-direction: column;
+  .logo div {
+    display: block;
     text-align: center;
+  }
+  .candidat img {
+    float: none;
+    display: block;
+    margin: 0 auto 15px;
   }
   .tarja-proposta {
-    flex: 1 1 100%;
+    width: 100%;
+    float: none;
+    margin-right: 0;
   }
-  .barra {
-    flex-direction: column;
+  .barra span {
+    display: block;
     text-align: center;
-    gap: 4px;
   }
-  nav ul {
-    flex-direction: column;
-    text-align: center;
+  .barra span:last-child {
+    float: none;
+  }
+  nav li {
+    display: block;
   }
   nav a {
     padding: 9px 15px;
-  }
-  .taula-agenda {
-    font-size: 12px;
-  }
-  .taula-agenda th, .taula-agenda td {
-    padding: 8px 6px;
   }
 }
