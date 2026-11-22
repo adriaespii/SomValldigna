@@ -6,6 +6,63 @@
   <title>El Conflicte amb Xeraco - Som Valldigna</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .banner-alerta {
+      background: #8b0000;
+      color: #fff;
+      padding: 14px 20px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      border-radius: 4px;
+      margin-bottom: 25px;
+      border: 2px solid #ff4444;
+    }
+    .tarja-agressiva {
+      background: #fff8f8;
+      border: 1px solid #f0c2c2;
+      border-top: 4px solid #8b0000;
+      padding: 18px 20px;
+      border-radius: 3px;
+      flex: 1 1 calc(50% - 18px);
+    }
+    .tarja-agressiva h3 {
+      color: #8b0000;
+      font-size: 16.5px;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+    .seccio-traca {
+      text-align: center;
+      margin: 30px 0 10px;
+      padding: 22px;
+      background: #fff3e6;
+      border: 2px dashed #d95a11;
+      border-radius: 6px;
+    }
+    .boto-traca {
+      background: #d95a11;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      font-size: 15px;
+      font-weight: 700;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .boto-traca:hover {
+      background: #b8490a;
+    }
+    #canvas-traca {
+      display: block;
+      margin: 15px auto 0;
+      background: #111;
+      border-radius: 4px;
+      max-width: 100%;
+    }
+  </style>
 </head>
 <body>
 
@@ -37,55 +94,68 @@
   </header>
 
   <main>
-    <h2>La Gran Rivalitat: El Cas Xeraco</h2>
+    <div class="banner-alerta">
+      🚨 ESTAT D'EMERGÈNCIA COMARCAL: DECLARACIÓ D'HOSTILITAT DIPLOMÀTICA I BLOQUEIG TOTAL A XERACO 🚨
+    </div>
+
+    <h2>Ultimàtum de 24 Hores a les Autoritats de Xeraco</h2>
     <p>
-      Des de <strong>Som Valldigna</strong> declarem formalment i solemnement a <strong>Xeraco</strong> com el nostre arxirival oficial i la font de totes les intrigues comarcals. Diuen els historiadors de taverna que cada vegada que bufa vent de ponent o es retarda el tren de Rodalia, alguna cosa han tramat des de l'altre costat de la ratlla.
+      S'ha acabat la paciència de <strong>Som Valldigna</strong>. Després d'anys de provocacions sistemàtiques, sabotatges a la línia ferroviària de Rodalia i afirmacions intolerables sobre la suposada superioritat de les seues platges i cítrics, este comitè comarcal proclama l'estat de ruptura total de relacions veïnals.
     </p>
 
-    <div class="candidat" style="border-left-color: #d95a11;">
+    <div class="candidat" style="border-left-color: #8b0000; background: #fff5f5;">
       <div>
-        <h3 style="color: #d95a11;">Manifest Humorístic: Raons per a la Reconquesta Moral de Xeraco</h3>
-        <p class="carrec">Declaració Extraordinària de la Junta Comarcal (100% Sàtira)</p>
+        <h3 style="color: #8b0000;">Ordre Executiva 01/2026: Mesures Dràstiques Immediates</h3>
+        <p class="carrec" style="color: #8b0000;">Consell de Comandament Comarcal (Paròdia Electoral)</p>
         <p>
-          «No podem tolerar ni un minut més les seues presumptes intencions de voler patentar el suc de taronja o al·legar que la seua platja és millor que la de Tavernes. És una qüestió d'honor de tota la Valldigna.»
+          «No hi haurà diàleg ni negociació. Si abans de la mitjanit no desmantellen la pretensió de fer ombra a la Valldigna, s'executaran totes les mesures punitives d'aïllament econòmic, gastronòmic i sonor.»
         </p>
       </div>
     </div>
 
-    <h2>Els Greuges Històrics</h2>
+    <h2>Les Clàusules del Decret de Hostilitat</h2>
     <div class="galeria-propostes">
-      <div class="tarja-proposta">
-        <h3>1. L'Afronta de la Clòtxina i la Taronja</h3>
+      <div class="tarja-agressiva">
+        <h3>1. Mur Comarcal i Bloqueig de Fronteres</h3>
         <p>
-          Afirmen que les taronges de la Valldigna tenen menys suc que les seues. Considerem esta afirmació com una provocació diplomàtica de màxima gravetat que mereix una invasió pacífica de tractors en plena temporada de collita.
+          Alçament d'un tancament fronterer infranquejable en la línia divisòria municipal. Tot vehicle procedent de Xeraco serà sotmès a una inspecció duanera exhaustiva de maleter, confiscant qualsevol taronja sospitosa de procedència dubtosa.
         </p>
       </div>
 
-      <div class="tarja-proposta">
-        <h3>2. El Misteri del Rodalia C-1</h3>
+      <div class="tarja-agressiva">
+        <h3>2. Embargament Agrícola i Hídric Total</h3>
         <p>
-          Tothom sap a la comarca que si el tren arriba amb 15 minuts de retard a Tavernes, és perquè a Xeraco han posat una tanca o algú s'ha quedat mirant com passa el comboi sense pujar. Exigim un peatge simbòlic a tot xeraquer que gosarà trepitjar terra vallera.
+          Queda taxativament prohibit el pas d'un sol litre d'aigua de les nostres séquies històriques cap als seus conreus. Reclamem la sobirania incondicional de tota la conca fins que demanen disculpes formals de genolls a la plaça del Monestir.
         </p>
       </div>
 
-      <div class="tarja-proposta">
-        <h3>3. L'Imposició del «Cremaet»</h3>
+      <div class="tarja-agressiva">
+        <h3>3. Confiscació de la Parada del Rodalia</h3>
         <p>
-          Diuen que allà fan millor el cremaet. Com a valldignencs de soca-rel, proposem una comissió d'investigació gastronòmica d'urgència per a desmuntar este mite en un tast a cegues a la plaça major.
+          Exigim a Renfe que el tren passe per la seua estació a tota velocitat sense frenar, fent sonar la botzina a màxima potència. Els combois només faran parada d'honor a Tavernes de la Valldigna.
         </p>
       </div>
 
-      <div class="tarja-proposta">
-        <h3>4. Pla d'Acció Comarcal</h3>
+      <div class="tarja-agressiva">
+        <h3>4. Setge Acústic: El Masclet Dissuasori</h3>
         <p>
-          Com a mesura dissuasòria, Som Valldigna planteja organitzar una desfilada de bandes de música i xarangues a les portes de Xeraco tocant a les 7 del matí per a recordar-los pacíficament qui té la millor cultura musical del món.
+          Desplegament d'un cordó sanitari de xarangues i bateries pirotècniques apuntant al terme veí que dispararan trons d'avís i pasdobles ininterromputs a les 6:00 h del matí per a no donar-los ni un segon de treva ni descans.
         </p>
       </div>
+    </div>
+
+    <div class="seccio-traca">
+      <h3 style="color: #d95a11; font-size: 18px; margin-bottom: 6px;">💥 Bateria Pirotècnica de Represàlia Festiva 💥</h3>
+      <p style="font-size: 13.5px; color: #444;">
+        Prem el botó per a disparar la mascletà d'avís protocol·lària dirigida cap a Xeraco:
+      </p>
+      <button class="boto-traca" onclick="dispararMascleta()">🔥 DISPARAR TRON D'AVÍS 🔥</button>
+      <canvas id="canvas-traca" width="600" height="220"></canvas>
     </div>
 
     <div class="clausula-rgpd" style="text-align: center; margin-top: 25px;">
-      <p style="text-align: center; font-size: 13px; color: #2d5d46; font-weight: 600;">
-        ⚠️ <em>Nota d'humor: Esta pàgina és una paròdia de rivalitat veïnal de classe per al projecte fictici. Cap municipi ni veí de Xeraco ha patit danys durant la redacció d'este contingut.</em>
+      <p style="text-align: center; font-size: 13px; color: #8b0000; font-weight: 600;">
+        ⚠️ <em>Avís Legal de Sàtira: Document 100% humorístic redactat per al projecte fictici escolar de classe de DAW. L'única cosa que s'ha disparat són partícules a este Canvas HTML.</em>
       </p>
     </div>
   </main>
@@ -104,6 +174,59 @@
       <a href="#">Avís Legal</a>
     </div>
   </footer>
+
+  <script>
+    const canvas = document.getElementById('canvas-traca');
+    const ctx = canvas.getContext('2d');
+    let particules = [];
+
+    function dispararMascleta() {
+      for (let i = 0; i < 70; i++) {
+        particules.push({
+          x: canvas.width / 2 + (Math.random() * 80 - 40),
+          y: canvas.height - 30,
+          vx: (Math.random() - 0.5) * 8,
+          vy: -(Math.random() * 6 + 5),
+          rad: Math.random() * 3 + 2,
+          color: ['#ff3300', '#ff9900', '#ffff00', '#2d5d46', '#ffffff'][Math.floor(Math.random() * 5)],
+          vida: 45
+        });
+      }
+    }
+
+    function animar() {
+      ctx.fillStyle = 'rgba(17, 17, 17, 0.25)';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      ctx.fillStyle = '#ff9900';
+      ctx.font = '12px Manrope, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText('DIRECCIÓ: TERME MUNICIPAL DE XERACO', canvas.width / 2, 25);
+
+      for (let i = particules.length - 1; i >= 0; i--) {
+        const p = particules[i];
+        p.x += p.vx;
+        p.y += p.vy;
+        p.vy += 0.15;
+        p.vida--;
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.rad, 0, Math.PI * 2);
+        ctx.fillStyle = p.color;
+        ctx.shadowBlur = 8;
+        ctx.shadowColor = p.color;
+        ctx.fill();
+        ctx.shadowBlur = 0;
+
+        if (p.vida <= 0) {
+          particules.splice(i, 1);
+        }
+      }
+
+      requestAnimationFrame(animar);
+    }
+    animar();
+  </script>
 
 </body>
 </html>
