@@ -178,30 +178,44 @@ h2 {
   margin-bottom: 0;
 }
 
-/* Filtre comarcal */
+/* Botons de Filtre Comarcal amb estil modern i visible */
 .filtre-comarcal {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin: 20px 0 25px;
+  align-items: center;
+  gap: 12px;
+  margin: 24px 0 20px;
   flex-wrap: wrap;
 }
-.filtre-btn {
-  background: #eaf2ec;
+.filtre-btn,
+button.filtre-btn {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #ffffff;
   color: #2d5d46;
-  border: 1px solid #c8dcd0;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 13px;
-  font-weight: 600;
+  border: 2px solid #2d5d46;
+  padding: 9px 18px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
   cursor: pointer;
-  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(45, 93, 70, 0.12);
+  transition: all 0.25s ease-in-out;
+  outline: none;
 }
-.filtre-btn:hover,
-.filtre-btn.actiu {
-  background: #2d5d46;
-  color: #fff;
+.filtre-btn:hover {
+  background-color: #d95a11;
+  color: #ffffff;
+  border-color: #d95a11;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(217, 90, 17, 0.25);
+}
+.filtre-btn.actiu,
+button.filtre-btn.actiu {
+  background-color: #2d5d46;
+  color: #ffffff;
   border-color: #2d5d46;
+  box-shadow: 0 3px 6px rgba(45, 93, 70, 0.3);
 }
 
 /* Targetes propostes */
