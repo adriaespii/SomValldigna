@@ -26,11 +26,11 @@
 
     <nav>
       <ul>
-        <li><a href="#inici" class="actiu">Inici</a></li>
-        <li><a href="#candidat">El Candidat</a></li>
-        <li><a href="#programa">Propostes</a></li>
-        <li><a href="#agenda">Agenda d'Actes</a></li>
-        <li><a href="#participa">Participa</a></li>
+        <li><a href="index.html" class="actiu">Inici</a></li>
+        <li><a href="candidat.html">El Candidat</a></li>
+        <li><a href="programa.html">Propostes</a></li>
+        <li><a href="agenda.html">Agenda d'Actes</a></li>
+        <li><a href="participa.html">Participa</a></li>
       </ul>
     </nav>
   </header>
@@ -49,7 +49,22 @@
       servicis públics de qualitat per a totes les etapes de la vida.
     </p>
 
-    <h2 class="verd" id="candidat">Cap de Llista Comarcal</h2>
+    <!-- Filtre Comarcal -->
+    <div class="filtre-comarcal">
+      <button class="filtre-btn actiu" onclick="filtrarPoble('tots', this)">Tota la Valldigna</button>
+      <button class="filtre-btn" onclick="filtrarPoble('tavernes', this)">Tavernes</button>
+      <button class="filtre-btn" onclick="filtrarPoble('simat', this)">Simat</button>
+      <button class="filtre-btn" onclick="filtrarPoble('benifairo', this)">Benifairó</button>
+      <button class="filtre-btn" onclick="filtrarPoble('barx', this)">Barx</button>
+    </div>
+
+    <div id="info-comarcal" class="bloc-info" style="margin-bottom: 25px;">
+      <p id="text-filtre" style="text-align: center; font-style: italic; color: #2d5d46; font-weight: 600;">
+        Mostrant el projecte comarcal conjunt per als 4 pobles de la Valldigna.
+      </p>
+    </div>
+
+    <h2 class="verd">Cap de Llista Comarcal</h2>
     <div class="candidat">
       <img src="assets/image.png" alt="Joan Almiñana i Vercher">
       <div>
@@ -64,6 +79,28 @@
           Llicenciat en Ciències Polítiques i amb una llarga trajectòria en l'associacionisme veïnal i cultural de la
           comarca, Joan encapçala un equip multidisciplinari i representatiu de tots els pobles de la vall.
         </p>
+        <p style="margin-top: 10px;">
+          <a href="candidat.html" style="color: #d95a11; font-weight: 700;">Coneix tot l'equip comarcal &rarr;</a>
+        </p>
+      </div>
+    </div>
+
+    <h2>Eixos Prioritaris</h2>
+    <div class="galeria-propostes">
+      <div class="tarja-proposta">
+        <h3>1. Agricultura i Cítrics</h3>
+        <p>
+          Defensa fèrria del preu just per a la taronja i suport directe al xicotet llaurador. Pla de xoc contra l'abandó de camps i modernització del regadiu tradicional.
+        </p>
+        <a href="programa.html#agricultura" style="color: #d95a11; font-weight: 600; font-size: 13px;">Llegir propostes &rarr;</a>
+      </div>
+
+      <div class="tarja-proposta">
+        <h3>2. Mobilitat i Rodalia C-1</h3>
+        <p>
+          Exigència de freqüències dignes en la línia C-1 a Tavernes i autobús llançadora que connecte Barx, Simat i Benifairó amb l'estació i la platja.
+        </p>
+        <a href="programa.html#mobilitat" style="color: #d95a11; font-weight: 600; font-size: 13px;">Llegir propostes &rarr;</a>
       </div>
     </div>
   </main>
@@ -72,15 +109,34 @@
     <p>Projecte Intermodular de 2n DAW · IES Jaume II el Just (Tavernes de la Valldigna)</p>
     <p>Treball d'equip desenvolupat per Adrià Espí i Pol Plana</p>
     <div class="links">
-      <a href="#inici">Inici</a> ·
-      <a href="#candidat">Candidat</a> ·
-      <a href="#programa">Propostes</a> ·
-      <a href="#agenda">Agenda</a> ·
-      <a href="#participa">Participa</a> ·
+      <a href="index.html">Inici</a> ·
+      <a href="candidat.html">Candidat</a> ·
+      <a href="programa.html">Propostes</a> ·
+      <a href="agenda.html">Agenda</a> ·
+      <a href="participa.html">Participa</a> ·
       <a href="#">Política de Privacitat</a> ·
       <a href="#">Avís Legal</a>
     </div>
   </footer>
+
+  <script>
+    function filtrarPoble(poble, btn) {
+      document.querySelectorAll('.filtre-btn').forEach(b => b.classList.remove('actiu'));
+      btn.classList.add('actiu');
+      const textFiltre = document.getElementById('text-filtre');
+      if (poble === 'tavernes') {
+        textFiltre.textContent = "Prioritats per a Tavernes: Rodalia C-1, regeneració de la platja, polígon industrial i vivenda jove.";
+      } else if (poble === 'simat') {
+        textFiltre.textContent = "Prioritats per a Simat: Protecció del Monestir de Santa Maria, dinamització turística sostenible i connexió d'autobús.";
+      } else if (poble === 'benifairo') {
+        textFiltre.textContent = "Prioritats per a Benifairó: Impuls al sector citrícola, suport a les associacions locals i transport comarcal.";
+      } else if (poble === 'barx') {
+        textFiltre.textContent = "Prioritats per a Barx i La Drova: Comunicacions viàries segures, turisme de muntanya sostenible i servicis sanitaris continus.";
+      } else {
+        textFiltre.textContent = "Mostrant el projecte comarcal conjunt per als 4 pobles de la Valldigna.";
+      }
+    }
+  </script>
 
 </body>
 </html>

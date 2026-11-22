@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Participa i Fes-te Voluntari - Som Valldigna</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="barra">
+      <span>Candidatura Ciutadana Comarcal</span>
+      <span>Tavernes · Simat · Benifairó · Barx</span>
+    </div>
+
+    <div class="logo">
+      <img src="assets/logoFinal.jpg" alt="Logo Som Valldigna">
+      <div>
+        <h1>SOM VALLDIGNA</h1>
+        <p class="subtitol">Candidatura Ciutadana Comarcal</p>
+        <p class="lema">«La força de la nostra terra, la veu de la nostra gent»</p>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="candidat.html">El Candidat</a></li>
+        <li><a href="programa.html">Propostes</a></li>
+        <li><a href="agenda.html">Agenda d'Actes</a></li>
+        <li><a href="participa.html" class="actiu">Participa</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Fes-te Voluntari/a o Simpatitzant</h2>
+    <p>
+      La força de <strong>Som Valldigna</strong> és la seua gent. Si vols col·laborar en la campanya, participar en els equips de treball dels pobles, aportar idees o rebre informació de primera mà de les nostres activitats, uneix-te a la candidatura ciutadana.
+    </p>
+
+    <form class="formulari-participa" id="form-voluntariat" onsubmit="enviarFormulari(event)">
+      <div class="camp-formulari">
+        <label for="nom">Nom i Cognoms *</label>
+        <input type="text" id="nom" name="nom" required placeholder="Ex. Joan Almiñana">
+      </div>
+
+      <div class="camp-formulari">
+        <label for="email">Correu electrònic *</label>
+        <input type="email" id="email" name="email" required placeholder="nom@exemple.cat">
+      </div>
+
+      <div class="camp-formulari">
+        <label for="telefon">Telèfon de contacte</label>
+        <input type="tel" id="telefon" name="telefon" placeholder="600 000 000">
+      </div>
+
+      <div class="camp-formulari">
+        <label for="municipi">Municipi de residència *</label>
+        <select id="municipi" name="municipi" required>
+          <option value="" disabled selected>Selecciona el teu municipi</option>
+          <option value="Tavernes">Tavernes de la Valldigna</option>
+          <option value="Simat">Simat de la Valldigna</option>
+          <option value="Benifairo">Benifairó de la Valldigna</option>
+          <option value="Barx">Barx / La Drova</option>
+        </select>
+      </div>
+
+      <div class="camp-formulari">
+        <label for="interes">Com t'agradaria col·laborar?</label>
+        <select id="interes" name="interes">
+          <option value="simpatitzant">Com a simpatitzant (rebre informació)</option>
+          <option value="actes">Suport en actes i assemblees</option>
+          <option value="xarxes">Difusió i comunicació en xarxes</option>
+          <option value="programa">Grups de treball del programa comarcal</option>
+        </select>
+      </div>
+
+      <div class="camp-formulari">
+        <label for="missatge">Comentaris o propostes per a la teua localitat</label>
+        <textarea id="missatge" name="missatge" rows="3" placeholder="Escriu ací les teues inquietuds o suggeriments..."></textarea>
+      </div>
+
+      <!-- Clàusula RGPD Art. 9 -->
+      <div class="clausula-rgpd">
+        <p>
+          <strong>Informació Bàsica sobre Protecció de Dades (RGPD Art. 9):</strong> D'acord amb el Reglament (UE) 2016/679 de Protecció de Dades (RGPD), t'informem que les dades de caràcter personal recollides en este formulari revelen o poden revelar opinions o afiliació política (categoria especial segons l'Art. 9 del RGPD). El Responsable del Tractament és <em>Som Valldigna</em>. La finalitat és la gestió de les persones voluntàries i simpatitzants de la candidatura ciutadana comarcal. La legitimació es basa en el teu consentiment explícit. Les teues dades no seran cedides a tercers llevat d'obligació legal. Pots exercir els drets d'accés, rectificació, supressió, limitació i oposició mitjançant sol·licitud a la candidatura.
+        </p>
+
+        <div class="casella-rgpd">
+          <input type="checkbox" id="consentiment-rgpd" name="consentiment-rgpd" required>
+          <label for="consentiment-rgpd">
+            Atorgue el meu <strong>consentiment explícit</strong> (Art. 9.2.a del RGPD) per al tractament de les meues dades de contacte i de participació per part de la candidatura ciutadana <em>Som Valldigna</em> segons la política de privacitat informada. *
+          </label>
+        </div>
+      </div>
+
+      <button type="submit" class="boto-enviar">Enviar inscripció</button>
+
+      <div class="missatge-exit" id="missatge-confirmacio">
+        Moltes gràcies pel teu suport a Som Valldigna! Ens posarem en contacte amb tu prompte.
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>Projecte Intermodular de 2n DAW · IES Jaume II el Just (Tavernes de la Valldigna)</p>
+    <p>Treball d'equip desenvolupat per Adrià Espí i Pol Plana</p>
+    <div class="links">
+      <a href="index.html">Inici</a> ·
+      <a href="candidat.html">Candidat</a> ·
+      <a href="programa.html">Propostes</a> ·
+      <a href="agenda.html">Agenda</a> ·
+      <a href="participa.html">Participa</a> ·
+      <a href="#">Política de Privacitat</a> ·
+      <a href="#">Avís Legal</a>
+    </div>
+  </footer>
+
+  <script>
+    function enviarFormulari(e) {
+      e.preventDefault();
+      const confirmacio = document.getElementById('missatge-confirmacio');
+      confirmacio.style.display = 'block';
+      document.getElementById('form-voluntariat').reset();
+      confirmacio.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
