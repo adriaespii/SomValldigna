@@ -1,426 +1,103 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Manrope", sans-serif;
-}
-body {
-  background: #f2f5f3;
-  color: #2b2d42;
-  line-height: 1.6;
-  padding-top: 210px;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: "Manrope", sans-serif; }
+body { background: #f2f5f3; color: #2b2d42; line-height: 1.6; padding-top: 210px; }
+a { text-decoration: none; color: inherit; }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background: #fff;
-  border-bottom: 3px solid #2d5d46;
-}
-.barra,
-footer {
-  background: #1e3a2c;
-}
-.barra {
-  color: #e2e8f0;
-  font-size: 12px;
-  padding: 6px 20px;
-}
-.barra span:last-child {
-  float: right;
-}
+header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background: #fff; border-bottom: 3px solid #2d5d46; }
+.barra, footer { background: #1e3a2c; }
+.barra { color: #e2e8f0; font-size: 12px; padding: 6px 20px; }
+.barra span:last-child { float: right; }
 
-.logo {
-  text-align: center;
-  padding: 20px;
-}
-.logo img {
-  height: 90px;
-  vertical-align: middle;
-  margin-right: 15px;
-}
-.logo div {
-  display: inline-block;
-  vertical-align: middle;
-  text-align: left;
-}
-.logo h1,
-.candidat h3 {
-  color: #2d5d46;
-}
-.logo h1 {
-  font-size: 30px;
-  line-height: 1.1;
-}
-.subtitol,
-.carrec {
-  color: #d95a11;
-  font-weight: 700;
-}
-.subtitol {
-  font-size: 14px;
-}
-.lema {
-  font-size: 13px;
-  color: #555;
-  font-style: italic;
-}
+.logo { text-align: center; padding: 20px; }
+.logo img { height: 90px; vertical-align: middle; margin-right: 15px; }
+.logo div { display: inline-block; vertical-align: middle; text-align: left; }
+.logo h1, .candidat h3, .membre-equip h4, .tarja-proposta h3, .tarja-proposta h4 { color: #2d5d46; }
+.logo h1 { font-size: 30px; line-height: 1.1; }
+.subtitol, .carrec, .membre-equip .rol, .taula-agenda .poble { color: #d95a11; font-weight: 700; }
+.subtitol { font-size: 14px; }
+.lema { font-size: 13px; color: #555; font-style: italic; }
 
-nav,
-.verd {
-  background: #2d5d46;
-}
-nav ul {
-  text-align: center;
-  list-style: none;
-}
-nav li {
-  display: inline-block;
-}
-nav a {
-  display: block;
-  color: #fff;
-  padding: 11px 22px;
-  font-weight: 600;
-  font-size: 14px;
-}
-nav a:hover,
-nav .actiu,
-h2 {
-  background: #d95a11;
-  color: #fff;
-}
+nav, .verd, .taula-agenda th { background: #2d5d46; color: #fff; }
+nav ul { text-align: center; list-style: none; }
+nav li { display: inline-block; }
+nav a { display: block; color: #fff; padding: 11px 22px; font-weight: 600; font-size: 14px; }
+nav a:hover, nav .actiu, h2 { background: #d95a11; color: #fff; }
 
-main {
-  max-width: 960px;
-  margin: 25px auto;
-  background: #fff;
-  padding: 30px;
-  border-radius: 4px;
-}
-main p {
-  font-size: 14.5px;
-  color: #333;
-  margin-bottom: 12px;
-  text-align: justify;
-}
-h2 {
-  padding: 9px 24px;
-  font-size: 18px;
-  width: fit-content;
-  margin: 30px auto 20px;
-  border-radius: 3px;
-}
+main { max-width: 960px; margin: 25px auto; background: #fff; padding: 30px; border-radius: 4px; }
+main p { font-size: 14.5px; color: #333; margin-bottom: 12px; text-align: justify; }
+h2 { padding: 9px 24px; font-size: 18px; width: fit-content; margin: 30px auto 20px; border-radius: 3px; }
 
-.candidat {
+.candidat::after, .membre-equip::after, .galeria-propostes::after { content: ""; display: table; clear: both; }
+.candidat, .membre-equip {
   background: #f9fbf9;
   border: 1px solid #dbe7df;
   border-left: 5px solid #2d5d46;
   padding: 20px;
   border-radius: 4px;
   margin: 20px 0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-left-color 0.25s ease;
 }
-.candidat:hover {
-  transform: scale(1.02);
-  box-shadow: 0 6px 16px rgba(45, 93, 70, 0.12);
-  border-left-color: #d95a11;
-}
-.candidat::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.candidat img {
-  width: 170px;
-  height: 210px;
-  float: left;
-  margin-right: 25px;
-  border-radius: 4px;
-  border: 2px solid #2d5d46;
-}
-.candidat:hover img {
-  transform: scale(1.04);
-  border-color: #d95a11;
-}
-.candidat h3 {
-  font-size: 20px;
-  margin-bottom: 4px;
-}
-.carrec {
-  font-size: 13px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-.candidat p {
-  font-size: 14px;
-  color: #444;
-  margin-bottom: 8px;
-}
+.membre-equip { background: #fafbfa; border-color: #e1e7e3; border-left-width: 4px; padding: 16px 20px; margin: 0 0 15px; }
+.candidat:hover, .membre-equip:hover { transform: scale(1.02); box-shadow: 0 6px 16px rgba(45, 93, 70, 0.12); border-left-color: #d95a11; }
+.candidat img, .membre-equip img { float: left; border-radius: 4px; border: 2px solid #2d5d46; transition: transform 0.25s ease, border-color 0.25s ease; }
+.candidat img { width: 170px; height: 210px; margin-right: 25px; }
+.membre-equip img { width: 90px; height: 110px; margin-right: 20px; border-width: 1px; border-radius: 3px; }
+.candidat:hover img, .membre-equip:hover img { transform: scale(1.04); border-color: #d95a11; }
+.candidat h3 { font-size: 20px; margin-bottom: 4px; }
+.carrec, .membre-equip .rol { font-size: 13px; text-transform: uppercase; margin-bottom: 8px; }
+.candidat p, .membre-equip p { font-size: 14px; color: #444; margin-bottom: 8px; }
+.membre-info { overflow: hidden; }
+.membre-equip h4 { font-size: 16px; margin-bottom: 4px; }
 
-.llista-equip {
-  margin: 20px 0;
-}
-.membre-equip {
-  background: #fafbfa;
-  border: 1px solid #e1e7e3;
-  border-left: 4px solid #2d5d46;
-  padding: 16px 20px;
-  border-radius: 4px;
-  margin-bottom: 15px;
-}
-.membre-equip:hover {
-  transform: scale(1.02);
-  box-shadow: 0 4px 12px rgba(45, 93, 70, 0.1);
-  border-left-color: #d95a11;
-}
-.membre-equip::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.membre-equip img {
-  width: 90px;
-  height: 110px;
-  float: left;
-  margin-right: 20px;
-  border-radius: 3px;
-  border: 1px solid #2d5d46;
-}
-.membre-equip:hover img {
-  transform: scale(1.05);
-  border-color: #d95a11;
-}
-.membre-info {
-  overflow: hidden;
-}
-.membre-equip h4 {
-  color: #2d5d46;
-  font-size: 16px;
-  margin-bottom: 4px;
-}
-.membre-equip .rol {
-  color: #d95a11;
-  font-size: 12.5px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 6px;
-}
-.membre-equip p {
-  font-size: 13.5px;
-  color: #444;
-}
-
-.filtre-comarcal {
-  text-align: center;
-  margin: 20px 0;
-}
+.filtre-comarcal { text-align: center; margin: 20px 0; }
 .filtre-btn {
-  background: #fff;
-  color: #2d5d46;
-  border: 2px solid #2d5d46;
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  margin: 4px;
+  background: #fff; color: #2d5d46; border: 2px solid #2d5d46;
+  padding: 8px 16px; border-radius: 4px; font-size: 14px; font-weight: 600; cursor: pointer; margin: 4px;
 }
-.filtre-btn:hover {
-  background: #d95a11;
-  color: #fff;
-  border-color: #d95a11;
-}
-.filtre-btn.actiu {
-  background: #2d5d46;
-  color: #fff;
-}
+.filtre-btn:hover { background: #d95a11; color: #fff; border-color: #d95a11; }
+.filtre-btn.actiu { background: #2d5d46; color: #fff; }
 
-.galeria-propostes {
-  margin: 20px 0;
-}
-.galeria-propostes::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+.galeria-propostes { margin: 20px 0; }
 .tarja-proposta {
-  width: 48%;
-  float: left;
-  margin-right: 4%;
-  margin-bottom: 18px;
-  background: #fafbfa;
-  border: 1px solid #e1e7e3;
-  border-top: 4px solid #2d5d46;
-  padding: 18px 20px;
-  border-radius: 3px;
+  width: 48%; float: left; margin: 0 4% 18px 0; padding: 18px 20px;
+  background: #fafbfa; border: 1px solid #e1e7e3; border-top: 4px solid #2d5d46; border-radius: 3px;
 }
-.tarja-proposta:nth-child(2n) {
-  margin-right: 0;
-  border-top-color: #d95a11;
-}
-.tarja-proposta h3,
-.tarja-proposta h4 {
-  font-size: 16px;
-  color: #2d5d46;
-  margin-bottom: 8px;
-}
-.tarja-proposta p {
-  font-size: 13.5px;
-  color: #4b5563;
-  margin-bottom: 8px;
-}
-.tarja-proposta ul {
-  padding-left: 20px;
-  font-size: 13.5px;
-  color: #4b5563;
-}
-.tarja-proposta li {
-  margin-bottom: 6px;
-}
+.tarja-proposta:nth-child(2n) { margin-right: 0; border-top-color: #d95a11; }
+.tarja-proposta h3, .tarja-proposta h4 { font-size: 16px; margin-bottom: 8px; }
+.tarja-proposta p, .tarja-proposta ul { font-size: 13.5px; color: #4b5563; margin-bottom: 8px; }
+.tarja-proposta ul { padding-left: 20px; }
+.tarja-proposta li { margin-bottom: 6px; }
 
-.taula-agenda {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0 25px;
-  font-size: 13.5px;
-}
-.taula-agenda th {
-  background: #2d5d46;
-  color: #fff;
-  padding: 10px 14px;
-  text-align: left;
-}
-.taula-agenda td {
-  padding: 10px 14px;
-  border-bottom: 1px solid #e2e8f0;
-  color: #334155;
-}
-.taula-agenda tr:nth-child(even) {
-  background: #f8faf9;
-}
-.taula-agenda .poble {
-  font-weight: 700;
-  color: #d95a11;
-}
+.taula-agenda { width: 100%; border-collapse: collapse; margin: 20px 0 25px; font-size: 13.5px; }
+.taula-agenda th, .taula-agenda td { padding: 10px 14px; text-align: left; }
+.taula-agenda td { border-bottom: 1px solid #e2e8f0; color: #334155; }
+.taula-agenda tr:nth-child(even) { background: #f8faf9; }
 
 .formulari-participa {
-  max-width: 650px;
-  margin: 25px auto 10px;
-  background: #fbfdfc;
-  padding: 25px;
-  border: 1px solid #dbe7df;
-  border-top: 4px solid #d95a11;
-  border-radius: 4px;
+  max-width: 650px; margin: 25px auto 10px; padding: 25px;
+  background: #fbfdfc; border: 1px solid #dbe7df; border-top: 4px solid #d95a11; border-radius: 4px;
 }
-.camp-formulari {
-  margin-bottom: 16px;
-}
-.camp-formulari label {
-  display: block;
-  font-size: 13.5px;
-  font-weight: 600;
-  color: #2d5d46;
-  margin-bottom: 6px;
-}
-.camp-formulari input,
-.camp-formulari select,
-.camp-formulari textarea {
-  width: 100%;
-  padding: 9px 12px;
-  font-size: 14px;
-  border: 1px solid #cbd5e1;
-  border-radius: 3px;
-  font-family: inherit;
-  color: #2b2d42;
-}
-.clausula-rgpd {
-  background: #f1f6f3;
-  border: 1px solid #d0e0d6;
-  padding: 12px 14px;
-  border-radius: 3px;
-  margin: 18px 0;
-}
-.clausula-rgpd p {
-  font-size: 11.5px;
-  color: #555;
-  margin-bottom: 8px;
-}
-.casella-rgpd input {
-  vertical-align: top;
-  margin-top: 3px;
-  margin-right: 8px;
-}
-.casella-rgpd label {
-  display: inline-block;
-  width: 90%;
-  font-size: 12.5px;
-  color: #2b2d42;
-  font-weight: 600;
+.camp-formulari { margin-bottom: 16px; }
+.camp-formulari label { display: block; font-size: 13.5px; font-weight: 600; color: #2d5d46; margin-bottom: 6px; }
+.camp-formulari input, .camp-formulari select, .camp-formulari textarea {
+  width: 100%; padding: 9px 12px; font-size: 14px; border: 1px solid #cbd5e1; border-radius: 3px; font-family: inherit; color: #2b2d42;
 }
 .boto-enviar {
-  background: #d95a11;
-  color: #fff;
-  border: none;
-  padding: 12px;
-  font-size: 15px;
-  font-weight: 700;
-  border-radius: 3px;
-  cursor: pointer;
-  width: 100%;
+  background: #d95a11; color: #fff; border: none; padding: 12px;
+  font-size: 15px; font-weight: 700; border-radius: 3px; cursor: pointer; width: 100%;
 }
-.boto-enviar:hover {
-  background: #b8490a;
-}
+.boto-enviar:hover { background: #b8490a; }
 .missatge-exit {
-  display: none;
-  background: #eaf2ec;
-  border: 1px solid #2d5d46;
-  color: #2d5d46;
-  padding: 14px;
-  border-radius: 3px;
-  margin-top: 15px;
-  font-weight: 600;
-  text-align: center;
+  display: none; background: #eaf2ec; border: 1px solid #2d5d46; color: #2d5d46;
+  padding: 14px; border-radius: 3px; margin-top: 15px; font-weight: 600; text-align: center;
 }
 
 .parallax {
-  background-image: url("assets/valldigna_parallax.jpg");
-  height: 350px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 25px 0;
-  border-radius: 4px;
+  background: url("assets/valldigna_parallax.jpg") center/cover no-repeat fixed;
+  height: 350px; margin: 25px 0; border-radius: 4px;
 }
 
-footer {
-  color: #cbd5e1;
-  padding: 24px 20px;
-  margin-top: 40px;
-  border-top: 4px solid #d95a11;
-  font-size: 13px;
-  text-align: center;
-}
-footer p {
-  margin-bottom: 6px;
-}
-.links {
-  margin-top: 10px;
-  font-size: 12px;
-}
-.links a {
-  margin: 0 8px;
-  text-decoration: underline;
-  color: #cbd5e1;
-}
-.links a:hover {
-  color: #fff;
-}
+footer { color: #cbd5e1; padding: 24px 20px; margin-top: 40px; border-top: 4px solid #d95a11; font-size: 13px; text-align: center; }
+footer p { margin-bottom: 6px; }
+.links { margin-top: 10px; font-size: 12px; }
+.links a { margin: 0 8px; text-decoration: underline; color: #cbd5e1; }
+.links a:hover { color: #fff; }
