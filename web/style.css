@@ -51,9 +51,9 @@ footer {
 }
 .logo h1,
 .candidat h3,
-.membre-equip h4,
-.tarja-proposta h3,
-.tarja-proposta h4 {
+.membre h4,
+.tarja h3,
+.tarja h4 {
   color: #2d5d46;
 }
 .logo h1 {
@@ -61,8 +61,8 @@ footer {
 }
 .subtitol,
 .carrec,
-.membre-equip .rol,
-.taula-agenda .poble {
+.membre .rol,
+.agenda .poble {
   color: #d95a11;
   font-weight: 700;
 }
@@ -73,7 +73,7 @@ footer {
 }
 nav,
 .verd,
-.taula-agenda th {
+.agenda th {
   background: #2d5d46;
   color: #fff;
 }
@@ -116,14 +116,14 @@ h2 {
   border-radius: 3px;
 }
 .candidat::after,
-.membre-equip::after,
-.galeria-propostes::after {
+.membre::after,
+.propostes::after {
   content: "";
   display: table;
   clear: both;
 }
 .candidat,
-.membre-equip {
+.membre {
   background: #f9fbf9;
   border: 1px solid #dbe7df;
   border-left: 5px solid #2d5d46;
@@ -133,12 +133,12 @@ h2 {
   transition: 0.25s;
 }
 .candidat:hover,
-.membre-equip:hover {
+.membre:hover {
   transform: scale(1.02);
   border-left-color: #d95a11;
 }
 .candidat img,
-.membre-equip img {
+.membre img {
   float: left;
   border: 2px solid #2d5d46;
   border-radius: 4px;
@@ -146,19 +146,19 @@ h2 {
   height: 210px;
   margin-right: 25px;
 }
-.membre-equip img {
+.membre img {
   width: 90px;
   height: 110px;
   margin-right: 20px;
 }
-.membre-info {
+.info {
   overflow: hidden;
 }
-.filtre-comarcal {
+.filtre {
   text-align: center;
   margin: 20px 0;
 }
-.filtre-btn {
+.btn {
   background: #fff;
   color: #2d5d46;
   border: 2px solid #2d5d46;
@@ -168,16 +168,16 @@ h2 {
   cursor: pointer;
   margin: 4px;
 }
-.filtre-btn:hover,
-.filtre-btn.actiu {
+.btn:hover,
+.btn.actiu {
   background: #2d5d46;
   color: #fff;
 }
-.filtre-btn:hover {
+.btn:hover {
   background: #d95a11;
   border-color: #d95a11;
 }
-.tarja-proposta {
+.tarja {
   width: 48%;
   float: left;
   margin: 0 4% 18px 0;
@@ -187,29 +187,29 @@ h2 {
   border-top: 4px solid #2d5d46;
   border-radius: 3px;
 }
-.tarja-proposta:nth-child(2n) {
+.tarja:nth-child(2n) {
   margin-right: 0;
   border-top-color: #d95a11;
 }
-.tarja-proposta ul {
+.tarja ul {
   padding-left: 20px;
 }
-.taula-agenda {
+.agenda {
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
   font-size: 13.5px;
 }
-.taula-agenda th,
-.taula-agenda td {
+.agenda th,
+.agenda td {
   padding: 10px 14px;
   text-align: left;
   border-bottom: 1px solid #e2e8f0;
 }
-.taula-agenda tr:nth-child(even) {
+.agenda tr:nth-child(even) {
   background: #f8faf9;
 }
-.formulari-participa {
+.form {
   max-width: 650px;
   margin: 25px auto;
   padding: 25px;
@@ -217,24 +217,24 @@ h2 {
   border: 1px solid #dbe7df;
   border-top: 4px solid #d95a11;
 }
-.camp-formulari {
+.camp {
   margin-bottom: 16px;
 }
-.camp-formulari label {
+.camp label {
   display: block;
   font-weight: 600;
   color: #2d5d46;
   margin-bottom: 6px;
 }
-.camp-formulari input,
-.camp-formulari select,
-.camp-formulari textarea {
+.camp input,
+.camp select,
+.camp textarea {
   width: 100%;
   padding: 9px 12px;
   border: 1px solid #cbd5e1;
   border-radius: 3px;
 }
-.boto-enviar {
+.enviar {
   background: #d95a11;
   color: #fff;
   border: none;
@@ -244,7 +244,7 @@ h2 {
   cursor: pointer;
   width: 100%;
 }
-.missatge-exit {
+.exit {
   display: none;
   background: #eaf2ec;
   border: 1px solid #2d5d46;

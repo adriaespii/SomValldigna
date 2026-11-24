@@ -49,12 +49,12 @@
       servicis públics de qualitat per a totes les etapes de la vida.
     </p>
 
-    <div class="filtre-comarcal">
-      <button class="filtre-btn actiu" onclick="filtrarPoble('tots', this)">Tota la Valldigna</button>
-      <button class="filtre-btn" onclick="filtrarPoble('tavernes', this)">Tavernes</button>
-      <button class="filtre-btn" onclick="filtrarPoble('simat', this)">Simat</button>
-      <button class="filtre-btn" onclick="filtrarPoble('benifairo', this)">Benifairó</button>
-      <button class="filtre-btn" onclick="filtrarPoble('barx', this)">Barx</button>
+    <div class="filtre">
+      <button class="btn actiu" onclick="filtrarPoble('tots', this)">Tota la Valldigna</button>
+      <button class="btn" onclick="filtrarPoble('tavernes', this)">Tavernes</button>
+      <button class="btn" onclick="filtrarPoble('simat', this)">Simat</button>
+      <button class="btn" onclick="filtrarPoble('benifairo', this)">Benifairó</button>
+      <button class="btn" onclick="filtrarPoble('barx', this)">Barx</button>
     </div>
 
     <div id="info-comarcal" class="bloc-info" style="margin-bottom: 25px;">
@@ -87,8 +87,8 @@
     </div>
 
     <h2>Eixos Prioritaris</h2>
-    <div class="galeria-propostes">
-      <div class="tarja-proposta">
+    <div class="propostes">
+      <div class="tarja">
         <h3>1. Agricultura i Cítrics</h3>
         <p>
           Defensa fèrria del preu just per a la taronja i suport directe al xicotet llaurador. Pla de xoc contra l'abandó de camps i modernització del regadiu tradicional.
@@ -96,7 +96,7 @@
         <a href="programa.html#agricultura" style="color: #d95a11; font-weight: 600; font-size: 13px;">Llegir propostes &rarr;</a>
       </div>
 
-      <div class="tarja-proposta">
+      <div class="tarja">
         <h3>2. Mobilitat i Rodalia C-1</h3>
         <p>
           Exigència de freqüències dignes en la línia C-1 a Tavernes i autobús llançadora que connecte Barx, Simat i Benifairó amb l'estació i la platja.
@@ -122,7 +122,7 @@
 
   <script>
     function filtrarPoble(poble, btn) {
-      document.querySelectorAll('.filtre-btn').forEach(b => b.classList.remove('actiu'));
+      document.querySelectorAll('.btn').forEach(b => b.classList.remove('actiu'));
       btn.classList.add('actiu');
       const textFiltre = document.getElementById('text-filtre');
       if (poble === 'tavernes') {

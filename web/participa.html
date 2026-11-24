@@ -41,23 +41,23 @@
       La força de <strong>Som Valldigna</strong> és la seua gent. Si vols col·laborar en la campanya, participar en els equips de treball dels pobles, aportar idees o rebre informació de primera mà de les nostres activitats, uneix-te a la candidatura ciutadana.
     </p>
 
-    <form class="formulari-participa" id="form-voluntariat" onsubmit="enviarFormulari(event)">
-      <div class="camp-formulari">
+    <form class="form" id="form-voluntariat" onsubmit="enviarFormulari(event)">
+      <div class="camp">
         <label for="nom">Nom i Cognoms *</label>
         <input type="text" id="nom" name="nom" required placeholder="Ex. Joan Almiñana">
       </div>
 
-      <div class="camp-formulari">
+      <div class="camp">
         <label for="email">Correu electrònic *</label>
         <input type="email" id="email" name="email" required placeholder="nom@exemple.cat">
       </div>
 
-      <div class="camp-formulari">
+      <div class="camp">
         <label for="telefon">Telèfon de contacte</label>
         <input type="tel" id="telefon" name="telefon" placeholder="600 000 000">
       </div>
 
-      <div class="camp-formulari">
+      <div class="camp">
         <label for="municipi">Municipi de residència *</label>
         <select id="municipi" name="municipi" required>
           <option value="" disabled selected>Selecciona el teu municipi</option>
@@ -68,7 +68,7 @@
         </select>
       </div>
 
-      <div class="camp-formulari">
+      <div class="camp">
         <label for="interes">Com t'agradaria col·laborar?</label>
         <select id="interes" name="interes">
           <option value="simpatitzant">Com a simpatitzant (rebre informació)</option>
@@ -78,14 +78,14 @@
         </select>
       </div>
 
-      <div class="camp-formulari">
+      <div class="camp">
         <label for="missatge">Comentaris o propostes per a la teua localitat</label>
         <textarea id="missatge" name="missatge" rows="3" placeholder="Escriu ací les teues inquietuds o suggeriments..."></textarea>
       </div>
 
-      <button type="submit" class="boto-enviar">Enviar inscripció</button>
+      <button type="submit" class="enviar">Enviar inscripció</button>
 
-      <div class="missatge-exit" id="missatge-confirmacio">
+      <div class="exit" id="missatge-confirmacio">
         Moltes gràcies pel teu suport a Som Valldigna! Ens posarem en contacte amb tu prompte.
       </div>
     </form>
