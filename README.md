@@ -36,8 +36,45 @@ Paleta contrastada segons **WCAG 2.1 AA**:
 
 <p align="center">
   <img src="assets/page2_img2.jpeg" alt="Logotip Oficial" width="160">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="assets/page2_img3.jpeg" alt="Candidat Som Valldigna" width="140">
+  <img src="assets/page2_img3.jpeg" alt="Cap de Llista" width="140">
 </p>
+
+---
+
+## 👥 Candidatura i Equip Comarcal
+
+L'equip de **Som Valldigna** compta amb representació directa de veïnes i veïns dels quatre municipis de la comarca:
+
+<p align="center">
+  <img src="assets/page2_img3.jpeg" alt="Joan Almiñana i Vercher" width="210"><br>
+  <strong>1. Joan Almiñana i Vercher</strong><br>
+  <em>Cap de Llista i Portaveu Comarcal</em>
+</p>
+
+<table align="center" width="100%">
+  <tr>
+    <td align="center" width="25%" valign="top">
+      <img src="assets/candidat2_simat.jpeg" alt="Maria Fons i Pellicer" width="170"><br>
+      <strong>2. Maria Fons i Pellicer</strong><br>
+      <em>Simat · Patrimoni Cultural i Monestir</em>
+    </td>
+    <td align="center" width="25%" valign="top">
+      <img src="assets/candidat3_benifairo.jpeg" alt="Vicent Gascón i Palomares" width="170"><br>
+      <strong>3. Vicent Gascón i Palomares</strong><br>
+      <em>Benifairó · Sector Agrari i Cítrics</em>
+    </td>
+    <td align="center" width="25%" valign="top">
+      <img src="assets/candidat4_tavernes.jpeg" alt="Elena Boix i Mascarell" width="170"><br>
+      <strong>4. Elena Boix i Mascarell</strong><br>
+      <em>Tavernes · Joventut i Ocupació</em>
+    </td>
+    <td align="center" width="25%" valign="top">
+      <img src="assets/candidat5_barx.jpeg" alt="Carles Vidal i Mahiques" width="170"><br>
+      <strong>5. Carles Vidal i Mahiques</strong><br>
+      <em>Barx · Medi Ambient i Mobilitat</em>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -47,7 +84,7 @@ Paleta contrastada segons **WCAG 2.1 AA**:
 La web s'organitza en **5 seccions clau** enllaçades des de la navegació:
 1. **Inici:** Amb el lema de campanya i filtre comarcal.
 2. **Programa Electoral:** Amb els eixos prioritaris.
-3. **Candidats:** Amb el cap de llista.
+3. **Candidats:** Amb el cap de llista i la candidatura comarcal.
 4. **Agenda:** Amb les assemblees als pobles.
 5. **Formulari de Voluntariat:** Amb consentiment explícit segons el RGPD Art. 9.
 

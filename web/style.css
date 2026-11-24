@@ -157,8 +157,24 @@ h2 {
   border: 1px solid #e1e7e3;
   border-left: 4px solid #2d5d46;
   padding: 16px 20px;
-  border-radius: 3px;
+  border-radius: 4px;
   margin-bottom: 15px;
+}
+.membre-equip::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.membre-equip img {
+  width: 90px;
+  height: 110px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 3px;
+  border: 1px solid #2d5d46;
+}
+.membre-info {
+  overflow: hidden;
 }
 .membre-equip h4 {
   color: #2d5d46;
