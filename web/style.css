@@ -126,6 +126,12 @@ h2 {
   padding: 20px;
   border-radius: 4px;
   margin: 20px 0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-left-color 0.25s ease;
+}
+.candidat:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(45, 93, 70, 0.12);
+  border-left-color: #d95a11;
 }
 .candidat::after {
   content: "";
@@ -139,6 +145,11 @@ h2 {
   margin-right: 25px;
   border-radius: 4px;
   border: 2px solid #2d5d46;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+.candidat:hover img {
+  transform: scale(1.04);
+  border-color: #d95a11;
 }
 .candidat h3 {
   font-size: 20px;
@@ -165,6 +176,12 @@ h2 {
   padding: 16px 20px;
   border-radius: 4px;
   margin-bottom: 15px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-left-color 0.25s ease;
+}
+.membre-equip:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(45, 93, 70, 0.1);
+  border-left-color: #d95a11;
 }
 .membre-equip::after {
   content: "";
@@ -178,6 +195,11 @@ h2 {
   margin-right: 20px;
   border-radius: 3px;
   border: 1px solid #2d5d46;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+.membre-equip:hover img {
+  transform: scale(1.05);
+  border-color: #d95a11;
 }
 .membre-info {
   overflow: hidden;
