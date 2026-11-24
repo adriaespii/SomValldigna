@@ -8,6 +8,7 @@ body {
   background: #f2f5f3;
   color: #2b2d42;
   line-height: 1.6;
+  padding-top: 210px;
 }
 a {
   text-decoration: none;
@@ -15,6 +16,11 @@ a {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   background: #fff;
   border-bottom: 3px solid #2d5d46;
 }
