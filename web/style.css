@@ -372,6 +372,17 @@ h2 {
   text-align: center;
 }
 
+.parallax {
+  background-image: url("assets/valldigna_parallax.jpg");
+  height: 350px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 25px 0;
+  border-radius: 4px;
+}
+
 footer {
   color: #cbd5e1;
   padding: 24px 20px;
